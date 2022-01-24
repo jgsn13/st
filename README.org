@@ -4,7 +4,7 @@ A fork of [[https://st.suckless.org][st]], a simple terminal emulator for X whic
 *** Requirements
 - In order to build st you need the Xlib header files.
 
-- You must install *harfbuzz* lib for ligatures and maybe [[https://github.com/jgsn13/libxft-bgra][libxft-bgra]] (or similar) if st crashes when viewing emogis.
+- You must install *harfbuzz* lib for ligatures and maybe [[https://github.com/jgsn13/libxft-bgra][libxft-bgra]] (available on [[https://aur.archlinux.org/packages/libxft-bgra/][AUR]]) if st crashes when viewing emogis.
 
 - A compositor like *picom*.
 
@@ -17,8 +17,7 @@ A fork of [[https://st.suckless.org][st]], a simple terminal emulator for X whic
 - If you want to add new [[https://st.suckless.org/patches/][patches]], do it manually by reading the *.diff* files and removing/adding new lines, otherwise you'll get annoying bugs/errors.
 
 *** Installation
-- Edit config.mk to match your local setup (st is installed into
-the /usr/local namespace by default).
+- Edit config.mk to match your local setup (st is installed into the /usr/local namespace by default).
 
 - Afterwards enter the following command to build and install st (if necessary as root):
 #+begin_src sh

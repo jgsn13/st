@@ -219,6 +219,7 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Down,        kscrolldown,    {.i =  1} },
 	{ TERMMOD,              XK_Up,          kscrollup,      {.i = -1} },
 	{ TERMMOD,              XK_Down,        kscrolldown,    {.i = -1} },
+	{ ShiftMask,            XK_Escape,      keyboard_select,{.i =  0} },
 };
 
 /*

@@ -27,16 +27,10 @@ make clean install
 
 *** Screenshots
 - *First look*
-#+CAPTION: Look
-#+NAME: look 1
-[[screenshots/look1.png]]
+[[screenshots/look1.png][Look 1]]
 
 - *Ligatures, emogis and box drawing*
-#+CAPTION: Look
-#+NAME: look 2
-[[screenshots/look2.png]]
+[[screenshots/look2.png][Look 2]]
 
 - *Neovim behavior*
-#+CAPTION: Look
-#+NAME: look 3
-[[screenshots/look3.png]]
+[[screenshots/look3.png][Look 3]]

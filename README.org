@@ -10,7 +10,7 @@ A fork of [[https://st.suckless.org][st]], a simple terminal emulator for X whic
 
 - A [[https://www.nerdfonts.com][Nerd Font]] (I'm using *FiraCode NF* btw) and, optionally, a font for emojis like *Noto Color Emoji*.
 
-- `xorg-xev` if you want to find key values and customize the shortcuts.
+- ~xorg-xev~ if you want to find key values and customize the shortcuts.
 
 
 *** Notes

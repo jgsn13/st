@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraCode NF:style:regular:pixelsize=14:antialias=true:autohint=true";
+static char *font = "FiraCode NF:style:regular:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -106,37 +106,39 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.88, alphaUnfocused = 0.7;
+// float alpha = 0.9, alphaUnfocused = 0.8;
+float alpha = 1.0, alphaUnfocused = 1.0;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+   /* tango colors */
+   /* 8 normal colors */
+   [0] = "#202425", /* black   */
+   [1] = "#eb3511", /* red     */
+   [2] = "#65b116", /* green   */
+   [3] = "#dbb614", /* yellow  */
+   [4] = "#538dc8", /* blue    */
+   [5] = "#97739d", /* magenta */
+   [6] = "#2bb4b9", /* cyan    */
+   [7] = "#dee0da", /* white   */
+ 
+   /* 8 bright colors */
+   [8]  = "#737273", /* black   */
+   [9]  = "#fc5949", /* red     */
+   [10] = "#9be547", /* green   */
+   [11] = "#fdeb61", /* yellow  */
+   [12] = "#84aed6", /* blue    */
+   [13] = "#cba3c5", /* magenta */
+   [14] = "#31ecef", /* cyan    */
+   [15] = "#f0f2f0", /* white   */
 
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"gray90", /* default foreground colour */
-	"black", /* default background colour */
+   [255] = 0,
+ 
+   /* more colors can be added after 255 to use with DefaultXX */
+   "#cccccc",
+   "#555555",
+   [258] = "#dee0da", /* foreground */
+   [259] = "#3c3c3c", /* background */
 };
 
 
@@ -164,15 +166,15 @@ unsigned int unfocusedbg = 16;
  * 7: blinking st cursor
  * 8: steady st cursor
  */
-static unsigned int cursorstyle = 3;
+static unsigned int cursorstyle = 5;
 static Rune stcursor = 0x2603; /* snowman ("☃") */
 
 /*
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 94;
+static unsigned int rows = 28;
 
 /*
  * Default colour and shape of the mouse cursor

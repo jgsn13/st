@@ -32,7 +32,7 @@ static float chscale = 1.0;
 /*
  * word delimiter string
  *
- * More advanced example: L" `'\"()[]{}"
+ * More advanced example: L" `'\"()[]{}:7"
  */
 wchar_t *worddelimiters = L" ";
 
@@ -106,8 +106,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-// float alpha = 0.9, alphaUnfocused = 0.8;
-float alpha = 1.0, alphaUnfocused = 1.0;
+float alpha = 0.9, alphaUnfocused = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -118,7 +117,7 @@ static const char *colorname[] = {
    [2] = "#65b116", /* green   */
    [3] = "#dbb614", /* yellow  */
    [4] = "#538dc8", /* blue    */
-   [5] = "#97739d", /* magenta */
+   [5] = "#DE79FF", /* magenta */
    [6] = "#2bb4b9", /* cyan    */
    [7] = "#dee0da", /* white   */
  
@@ -128,7 +127,7 @@ static const char *colorname[] = {
    [10] = "#9be547", /* green   */
    [11] = "#fdeb61", /* yellow  */
    [12] = "#84aed6", /* blue    */
-   [13] = "#cba3c5", /* magenta */
+   [13] = "#C579FF", /* magenta */
    [14] = "#31ecef", /* cyan    */
    [15] = "#f0f2f0", /* white   */
 
